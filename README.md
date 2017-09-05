@@ -19,7 +19,7 @@ See the `ino` folder.
 
 Inside are two files, one to set the baud rate of the SIM900 shield to 9600, and one which would be the main sketch to use with this module.
 
-Run the sketch for changing the baud rate to 9600 first, esp
+Run the sketch for changing the baud rate to 9600 first. And then you can run the gateway ino.
 
 ### For the Node JS side
 See examples/test.js
