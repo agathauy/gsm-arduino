@@ -1,0 +1,22 @@
+{
+    "name": "gsm-arduino",
+    "version": "0.1.0",
+    "description": "A node module for interfacing with a SIM900 shield and Arduino Uno.",
+    "author": "Agatha Uy",
+    "email": "agathauy@gmail.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/agathauy/gsm-arduino"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node examples/test.js"
+    },
+
+    "license": "MIT",
+    "dependencies": {
+        "moment": "^2.18.1",
+        "serialport": "^5.0.0",
+        "underscore": "^1.8.3"
+    }
+}
