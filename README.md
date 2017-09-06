@@ -8,6 +8,8 @@ Warning, in alpha stages.
 
 No verificaiton of responses yet, these will be changed Arduino side in the near future.
 
+IMPORTANT: The RX buffer in SoftwareSerial.h of the SoftwareSerial Arduino library needs to be manually set to 240. 
+
 
 ## Installation
 `npm install gsm-arduino`
