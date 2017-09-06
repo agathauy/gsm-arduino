@@ -93,7 +93,7 @@ void loop()
             readMessage(ptr2+1);
             break;
             
-          case 4: // SEND_MSG: CMD_SEND_MSG:+639776224038:The message is this lalaala
+          case 4: // SEND_MSG: CMD_SEND_MSG:(insert number):The message is this lalaala
             if (DEBUG) Serial.print("[SIM900]: send msg\r\n");
             ptr = strchr((ptr2+1), ':'); // get end of phone number
             strncpy(mobile_num, (ptr2+1), ptr - (ptr2+1));
