@@ -10,6 +10,7 @@ const m1_open = () => {
         m1.open((status) => {
             if (status == true) {
                 console.log("Port is open");
+            
 
             } else {
                 console.log("Error in opening Port");
@@ -31,13 +32,6 @@ m1.eventEmitter.on('close connect', () => {
     m1_open();
 })
 
-m1.eventEmitter.on('error gsm serial', (err) => {
-    console.log('ERROR GSM SERIAL');
-    console.log(err);
-
-})
-
-
 
 m1.eventEmitter.on('new message', (num, text, datetime) => {
     console.log("New message:");
@@ -50,6 +44,12 @@ m1.eventEmitter.on('new message', (num, text, datetime) => {
         m1.sendMsg(num, reply);
     }
 });
+setTimeout(() => {
+    m1.sendMsg('222', 'bal');
+    //m1.sendMsg('8080', 'gosakto status');
+}, 10000)
+
+
 
 m1.eventEmitter.on('signal status', (signal_strength) => {
     console.log(`Signal strength: ${signal_strength}`);
