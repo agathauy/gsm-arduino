@@ -1,6 +1,6 @@
 {
     "name": "gsm-arduino",
-    "version": "0.1.13",
+    "version": "0.1.15",
     "description": "A node module for interfacing with a SIM900 shield and Arduino Uno.",
     "author": "Agatha Uy",
     "email": "agathauy@gmail.com",
